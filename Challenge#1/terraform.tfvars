@@ -1,0 +1,17 @@
+project_id             = "terraform-gcp-374215"
+region                 = "us-central1"
+zone                   = "us-central1-a"
+network_name           = "my-network"
+subnet_cidr_web        = "10.0.1.0/24"
+subnet_cidr_app        = "10.0.2.0/24"
+subnet_cidr_db         = "10.0.3.0/24"
+app_startup_script     = "#!/bin/bash\napt-get update\napt-get install -y git\napt-get install -y apache2\napt-get install -y php php-mysql\nservice apache2 restart\nrm -rf /var/www/html\nln -s /var/www/app /var/www/html\n"
+app_bucket_name        = "my-app-bucket"
+app_dns_zone_name      = "my-dns-zone"
+app_dns_name           = "example.com"
+http_health_check_name = "my-http-health-check"
+web_machine_type     = "f1-micro"
+app_machine_type     = "f1-micro"
+web_instance_count   = 2
+db_tier              = "db-f1-micro"
+
