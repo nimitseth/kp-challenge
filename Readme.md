@@ -1,6 +1,6 @@
 
+**KPMG Code Challenges**
 
-Explaining my approach and possible solution for given challenges.**KPMG Code Challenges**
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 **Challenge#1** : Three-Tier App 
 
