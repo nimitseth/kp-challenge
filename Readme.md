@@ -22,7 +22,7 @@ README.md for explaining my approach and possible solution for given challenges.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Challenge#2** : MeteData
+**Challenge#2** : MetaData
 
 This Terraform code creates a null resource named "instance_metadata" with a local-exec provisioner that executes a command. 
 
