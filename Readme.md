@@ -26,8 +26,9 @@ README.md for explaining my approach and possible solution for given challenges.
 
 This Terraform code creates a null resource named "instance_metadata" with a local-exec provisioner that executes a command. 
 
-The command uses the gcloud command to SSH into a Google Compute Engine instance in a specific zone, and then runs a curl command to retrieve the metadata for that instance from the Google Compute Engine metadata server. The metadata is then piped to the jq command, which filters and formats the output in JSON format. Finally, the metadata is redirected to a file named "instance_metadata.json".
+The command uses the gcloud command to SSH into a Google Compute Engine instance in a specific zone, and then runs a curl command to retrieve the metadata for that instance from the Google Compute Engine metadata server. The metadata is then piped to the jq command, which filters and formats the output in JSON format. 
 
+Finally, the metadata is redirected to a file named "instance_metadata.json".
 The purpose of this code is to retrieve metadata for a Google Compute Engine instance and save it in a file for further use.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
