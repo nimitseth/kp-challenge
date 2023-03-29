@@ -2,7 +2,7 @@
 
 README.md for explaining my approach and possible solution for given challenges.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-**Challenge#1**
+**Challenge#1** : Three-Tier App 
 
 1. A VPC network is created using the google_compute_network resource, with the name specified in the var.network_name variable. The auto_create_subnetworks parameter is set to false, which means that no subnetworks will be created automatically.
 
@@ -22,16 +22,17 @@ README.md for explaining my approach and possible solution for given challenges.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Challenge#2**
+**Challenge#2** : MeteData
 
 This Terraform code creates a null resource named "instance_metadata" with a local-exec provisioner that executes a command. 
-The command uses the gcloud command to SSH into a Google Compute Engine instance in a specific zone, and then runs a curl command to retrieve the metadata for that instance from the Google Compute Engine metadata server. 
-The metadata is then piped to the jq command, which filters and formats the output in JSON format. Finally, the metadata is redirected to a file named "instance_metadata.json". 
+
+The command uses the gcloud command to SSH into a Google Compute Engine instance in a specific zone, and then runs a curl command to retrieve the metadata for that instance from the Google Compute Engine metadata server. The metadata is then piped to the jq command, which filters and formats the output in JSON format. Finally, the metadata is redirected to a file named "instance_metadata.json".
+
 The purpose of this code is to retrieve metadata for a Google Compute Engine instance and save it in a file for further use.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-**Challenge#3**
+**Challenge#3** : Nested Values
 
 This code defines two local variables, object1 and object2, which are JSON objects. The objects have nested values that are accessed using the element function, which is used to retrieve values from nested objects.
 
